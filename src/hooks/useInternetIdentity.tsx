@@ -3,7 +3,7 @@ import { createContext, useContext, ReactNode } from 'react';
 
 interface InternetIdentityContextType {
   identity: null;
-  loginStatus: 'logged-out';
+  loginStatus: 'logged-out' | 'logging-in';
   login: () => Promise<void>;
   clear: () => Promise<void>;
 }

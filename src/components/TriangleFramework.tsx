@@ -165,12 +165,12 @@ export function TriangleFramework({ className = '' }: TriangleFrameworkProps) {
 
             {/* Top Left Corner - T */}
             <div 
-              className={`absolute top-0 left-0 md:left-10 w-64 transition-all duration-[400ms] ease-out ${
+              className={`absolute top-0 left-0 md:left-10 w-64 transition-all ease-out ${
                 topLeftVisible 
                   ? 'opacity-100 translate-y-0 scale-100' 
                   : 'opacity-0 -translate-y-5 scale-95'
               }`}
-              style={{ willChange: 'transform, opacity' }}
+              style={{ willChange: 'transform, opacity', transitionDuration: '400ms' }}
             >
               <Card className="border-2 border-c2r-primary shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="pt-6">
@@ -190,12 +190,12 @@ export function TriangleFramework({ className = '' }: TriangleFrameworkProps) {
 
             {/* Top Right Corner - R */}
             <div 
-              className={`absolute top-0 right-0 md:right-10 w-64 transition-all duration-[400ms] ease-out delay-[50ms] ${
+              className={`absolute top-0 right-0 md:right-10 w-64 transition-all ease-out ${
                 topRightVisible 
                   ? 'opacity-100 translate-y-0 scale-100' 
                   : 'opacity-0 -translate-y-5 scale-95'
               }`}
-              style={{ willChange: 'transform, opacity' }}
+              style={{ willChange: 'transform, opacity', transitionDuration: '400ms', transitionDelay: '50ms' }}
             >
               <Card className="border-2 border-c2r-secondary shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="pt-6">
@@ -215,12 +215,12 @@ export function TriangleFramework({ className = '' }: TriangleFrameworkProps) {
 
             {/* Bottom Corner - I */}
             <div 
-              className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-64 transition-all duration-[400ms] ease-out delay-[100ms] ${
+              className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-64 transition-all ease-out ${
                 bottomVisible 
                   ? 'opacity-100 translate-y-0 scale-100' 
                   : 'opacity-0 translate-y-5 scale-95'
               }`}
-              style={{ willChange: 'transform, opacity' }}
+              style={{ willChange: 'transform, opacity', transitionDuration: '400ms', transitionDelay: '100ms' }}
             >
               <Card className="border-2 border-c2r-accent shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="pt-6">
@@ -240,12 +240,12 @@ export function TriangleFramework({ className = '' }: TriangleFrameworkProps) {
 
             {/* Center Text */}
             <div 
-              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-[400ms] ease-out delay-[150ms] ${
+              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all ease-out ${
                 centerVisible 
                   ? 'opacity-100 scale-100' 
                   : 'opacity-0 scale-90'
               }`}
-              style={{ willChange: 'transform, opacity' }}
+              style={{ willChange: 'transform, opacity', transitionDuration: '400ms', transitionDelay: '150ms' }}
             >
               <div className="bg-gradient-to-br from-c2r-primary via-c2r-secondary to-c2r-accent p-8 rounded-2xl shadow-2xl text-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">

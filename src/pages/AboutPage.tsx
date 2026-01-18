@@ -6,7 +6,6 @@ import { useTeamMembers } from '@/hooks/useQueries';
 import { ScrollReveal } from '@/components/ScrollReveal';
 import { getImageUrl } from '@/lib/images';
 import { ParallaxSection } from '@/components/ParallaxSection';
-import { StoryCard } from '@/components/StoryCard';
 import { ChapterHeader } from '@/components/ChapterHeader';
 
 export default function AboutPage() {

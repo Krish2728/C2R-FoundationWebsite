@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from '@tanstack/react-router';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -39,7 +38,6 @@ const donationTiers = [
 ];
 
 export default function DonatePage() {
-  const navigate = useNavigate();
   const createDonation = useCreateDonation();
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
   const [customAmount, setCustomAmount] = useState('');

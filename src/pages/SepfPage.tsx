@@ -171,7 +171,7 @@ export default function SepfPage() {
                 className="w-full"
               >
                 <CarouselContent>
-                  {sdgs.map((sdg, index) => (
+                  {sdgs.map((sdg) => (
                     <CarouselItem key={sdg.number} className="md:basis-1/2 lg:basis-1/3">
                       <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                         <CardHeader>

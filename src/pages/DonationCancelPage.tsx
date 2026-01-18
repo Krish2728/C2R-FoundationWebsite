@@ -9,7 +9,7 @@ export default function DonationCancelPage() {
   const params = new URLSearchParams(window.location.search);
   const sessionId = params.get('sessionId') || '';
 
-  const { data, isLoading } = usePaymentCancel(sessionId);
+  const { isLoading } = usePaymentCancel(sessionId);
 
   if (isLoading) {
     return (

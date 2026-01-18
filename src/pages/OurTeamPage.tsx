@@ -10,7 +10,7 @@ import { getImageUrl } from '@/lib/images';
 
 export default function OurTeamPage() {
   const navigate = useNavigate();
-  const { data: teamMembers = [], isLoading } = useTeamMembers();
+  const { data: teamMembers = [] } = useTeamMembers();
 
   // Categorize team members (you can adjust this logic based on your data structure)
   const leadership = teamMembers.filter(m => m.role.toLowerCase().includes('founder') || m.role.toLowerCase().includes('director'));
